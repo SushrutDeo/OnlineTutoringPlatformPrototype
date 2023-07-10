@@ -61,6 +61,15 @@ namespace OnlineTutoringPlatformPrototype.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 12 - 5 pm.
+        /// </summary>
+        public static string _12___5_pm {
+            get {
+                return ResourceManager.GetString("12_-_5_pm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to A Level.
         /// </summary>
         public static string A_Level {
@@ -70,20 +79,38 @@ namespace OnlineTutoringPlatformPrototype.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to After 5 pm.
+        /// </summary>
+        public static string After_5_pm {
+            get {
+                return ResourceManager.GetString("After_5_pm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Before 12.
+        /// </summary>
+        public static string Before_12 {
+            get {
+                return ResourceManager.GetString("Before_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Student&apos;s Home.
         /// </summary>
-        public static string Student_Home {
+        public static string Student_s_Home {
             get {
-                return ResourceManager.GetString("Student_Home", resourceCulture);
+                return ResourceManager.GetString("Student\'s_Home", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Tutor&apos;s Home.
         /// </summary>
-        public static string Tutor_Home {
+        public static string Tutor_s_Home {
             get {
-                return ResourceManager.GetString("Tutor_Home", resourceCulture);
+                return ResourceManager.GetString("Tutor\'s_Home", resourceCulture);
             }
         }
     }
