@@ -1,8 +1,8 @@
 ﻿using OnlineTutoringPlatformPrototype.Models.BaseClasses;
 
-namespace OnlineTutoringPlatformPrototype.Models.Subjects
+namespace OnlineTutoringPlatformPrototype.Models.CodedLists
 {
-	public class Subject : EntityBase
+	public class Gender : EntityBase
 	{
 		public string Name { get; set; }
 	}
