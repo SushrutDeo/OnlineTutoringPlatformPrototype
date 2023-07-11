@@ -25,6 +25,10 @@ namespace OnlineTutoringPlatformPrototype.Configuration
 			builder.HasMany(t => t.TimeRanges)
 				.WithMany(t => t.Tutors)
 				.UsingEntity<TutorAvailibilityTimeRange>();
+
+			builder.HasMany(t => t.EducationLevels)
+				.WithMany(t => t.Tutors)
+				.UsingEntity<TutorEducationLevel>();
 		}
 	}
 }

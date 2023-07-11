@@ -5,7 +5,9 @@ namespace OnlineTutoringPlatformPrototype.Models.Tutors
 {
 	public class Tutor : EntityBase
 	{
-		public int UserId { get; set; }
+		public string FirstName { get; set; }
+
+		public string LastName { get; set; }
 
 		public string Address { get; set; }
 
@@ -26,5 +28,7 @@ namespace OnlineTutoringPlatformPrototype.Models.Tutors
 		public ICollection<Subject> Subjects { get; set; }
 
 		public ICollection<TutorAvailibility> TutorAvailibilities { get; set; }
+
+		public ICollection<EducationLevel> EducationLevels { get; set; }
 	}
 }
