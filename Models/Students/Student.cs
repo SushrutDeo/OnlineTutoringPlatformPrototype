@@ -1,5 +1,5 @@
-﻿using OnlineTutoringPlatformPrototype.Enums;
-using OnlineTutoringPlatformPrototype.Models.BaseClasses;
+﻿using OnlineTutoringPlatformPrototype.Models.BaseClasses;
+using OnlineTutoringPlatformPrototype.Models.CodedLists;
 
 namespace OnlineTutoringPlatformPrototype.Models.Students
 {
@@ -9,8 +9,14 @@ namespace OnlineTutoringPlatformPrototype.Models.Students
 
 		public string Address { get; set; }
 
-		public EducationLevels EducationLevelId { get; set; }
+		public int EducationLevelId { get; set; }
 
-		public Genders GenderId { get; set; }
+		public int GenderId { get; set; }
+
+		public EducationLevel EducationLevel { get; set; }
+
+		public Gender Gender { get; set; }
+
+		public ICollection<Subject> Subjects { get; set; }
 	}
 }
