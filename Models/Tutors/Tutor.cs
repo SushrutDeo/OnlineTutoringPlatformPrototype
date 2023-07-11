@@ -24,5 +24,7 @@ namespace OnlineTutoringPlatformPrototype.Models.Tutors
 		public ICollection<TimeRange> TimeRanges { get; set; }
 
 		public ICollection<Subject> Subjects { get; set; }
+
+		public ICollection<TutorAvailibility> TutorAvailibilities { get; set; }
 	}
 }

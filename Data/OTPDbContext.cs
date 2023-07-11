@@ -48,6 +48,8 @@ namespace OnlineTutoringPlatformPrototype.Data
 
 		public DbSet<User> Users { get; set; }
 
+		public DbSet<TutorAvailibility> TutorAvailibilities { get; set; }
+
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.Entity<EducationLevel>().ToTable(nameof(EducationLevel));
@@ -79,6 +81,8 @@ namespace OnlineTutoringPlatformPrototype.Data
 			modelBuilder.Entity<Tutor>().ToTable(nameof(Tutor));
 
 			modelBuilder.Entity<User>().ToTable(nameof(User) + "s");
+
+			modelBuilder.Entity<TutorAvailibility>().ToTable(nameof(TutorAvailibility));
 
 			modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 		}
