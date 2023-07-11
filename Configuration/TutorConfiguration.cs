@@ -16,7 +16,7 @@ namespace OnlineTutoringPlatformPrototype.Configuration
 
 			builder.HasMany(t => t.TeachingPreferences)
 				.WithMany(t => t.Tutors)
-				.UsingEntity<TutorTeachingLocation>();
+				.UsingEntity<TutorTeachingPreference>();
 
 			builder.HasMany(t => t.WeekDays)
 				.WithMany(t => t.Tutors)

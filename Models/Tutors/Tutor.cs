@@ -1,5 +1,4 @@
-﻿using OnlineTutoringPlatformPrototype.Enums;
-using OnlineTutoringPlatformPrototype.Models.BaseClasses;
+﻿using OnlineTutoringPlatformPrototype.Models.BaseClasses;
 using OnlineTutoringPlatformPrototype.Models.CodedLists;
 
 namespace OnlineTutoringPlatformPrototype.Models.Tutors
@@ -14,7 +13,7 @@ namespace OnlineTutoringPlatformPrototype.Models.Tutors
 
 		public decimal PricePerHour { get; set; }
 
-		public Genders GenderId { get; set; }
+		public int GenderId { get; set; }
 
 		public Gender Gender { get; set; }
 

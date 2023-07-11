@@ -1,5 +1,4 @@
-﻿using OnlineTutoringPlatformPrototype.Enums;
-using OnlineTutoringPlatformPrototype.Models.BaseClasses;
+﻿using OnlineTutoringPlatformPrototype.Models.BaseClasses;
 
 namespace OnlineTutoringPlatformPrototype.Models.ManyToMany
 {
@@ -7,6 +6,6 @@ namespace OnlineTutoringPlatformPrototype.Models.ManyToMany
 	{
 		public int TutorId { get; set; }
 
-		public TimeRanges TimeRangeId { get; set; }
+		public int TimeRangeId { get; set; }
 	}
 }

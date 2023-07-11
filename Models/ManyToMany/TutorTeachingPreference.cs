@@ -1,9 +1,9 @@
 ﻿namespace OnlineTutoringPlatformPrototype.Models.ManyToMany
 {
-	public class TutorTeachingLocation
+	public class TutorTeachingPreference
 	{
 		public int TutorId { get; set; }
 
-		public int TeachingLocationId { get; set; }
+		public int TeachingPreferenceId { get; set; }
 	}
 }

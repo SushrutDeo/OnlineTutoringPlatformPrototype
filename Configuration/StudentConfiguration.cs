@@ -10,8 +10,10 @@ namespace OnlineTutoringPlatformPrototype.Configuration
 	{
 		public void Configure(EntityTypeBuilder<Student> builder)
 		{
-			builder.HasMany(t => t.Subjects)
-				.WithMany(t => t.Students)
+			builder.ToTable(nameof(Student));
+
+			builder.HasMany(s => s.Subjects)
+				.WithMany(s => s.Students)
 				.UsingEntity<StudentSubject>();
 		}
 	}
